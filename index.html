@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR co de component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .ball {
+        font-family: "Outfit", sans-serif;
+        background-color: hsl(212, 45%, 89%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: Grayish blue: hsl(220, 15%, 55%);
+      }
+      .panel {
+        background-color: rgb(255, 247, 236);
+        height: 70%;
+        width: 25%;
+        border-radius: 3vh;
+        padding: 1vh;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+      }
+      .panel>h1,p{
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 8%;
+        text-align: center;
+      }
+      .panel>*:first-child{
+        margin-top: 5%;
+      }
+      .panel h1{
+        font-size: 3vh;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .panel{
+          height: 70%;
+          width: 80%;
+        }
+      }
+      .panel a {
+        color: hsl(228, 45%, 44%);
+      }
+      .panel img {
+        height: auto;
+        width: 90%;
+        border-radius: 3vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball">
+      <div class="panel">
+        <img alt="chuj duży" src="./images/image-qr-code.png" />
+
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
