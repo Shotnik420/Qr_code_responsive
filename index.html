@@ -33,35 +33,37 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: Grayish blue: hsl(220, 15%, 55%);
+        color: hsl(220, 15%, 55%);
       }
       .panel {
         background-color: rgb(255, 247, 236);
         height: 70%;
         width: 25%;
-        border-radius: 3vh;
+        border-radius: 2vh;
         padding: 1vh;
         display: flex;
         flex-direction: column;
-
+        box-shadow: 1vh 1vh 5vh #0000001a;
         align-items: center;
       }
-      .panel>h1,p{
+      .panel > h1,
+      p {
         margin-left: 5vh;
         margin-right: 5vh;
         margin-top: 8%;
         text-align: center;
       }
-      .panel>*:first-child{
+      .panel > *:first-child {
         margin-top: 5%;
       }
-      .panel h1{
+      .panel h1 {
         font-size: 3vh;
         text-align: center;
+        color: hsl(218, 44%, 22%);
       }
 
       @media only screen and (max-width: 400px) {
-        .panel{
+        .panel {
           height: 70%;
           width: 80%;
         }
@@ -72,7 +74,7 @@
       .panel img {
         height: auto;
         width: 90%;
-        border-radius: 3vh;
+        border-radius: 2vh;
       }
     </style>
   </head>
